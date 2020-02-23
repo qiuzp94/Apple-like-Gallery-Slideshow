@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,27 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./jquery-3.4.1.js"></script>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
             <h1>
                 Apple-like Gallery<br>
-                Slideshow
+                <span>Slideshow</span>
             </h1>
-            <span>查看源代码<a href="#">点击跳转 &gt;&gt;</a></span>
+            <p>查看源代码&nbsp;<a href="https://github.com/qiuzp94/Apple-like-Gallery-Slideshow"
+                    target="_blank">点击跳转&gt;&gt;</a></p>
         </div>
         <div class="main">
-            <div class="before"></div>
-            <div class="after"></div>
-            <div class="images">
-                <img src="./images/macbook.jpg" alt="macbook">
-                <img src="./images/iphone.jpg" alt="iphone">
-                <img src="./images/imac.jpg" alt="imac">
-                <img src="./images/info.jpg" alt="info">
+            <div class="swiper">
+                <div class="before"></div>
+                <div class="after"></div>
+                <div class="images">
+                    <img src="./images/macbook.jpg" alt="macbook">
+                    <img src="./images/iphone.jpg" alt="iphone">
+                    <img src="./images/imac.jpg" alt="imac">
+                    <img src="./images/info.jpg" alt="info">
+                </div>
             </div>
             <ul class="buttons">
                 <li class="actived"><img src="./images/thumb_macbook.png" alt="thumb_macbook"></li>
@@ -37,4 +42,5 @@
         </div>
     </div>
 </body>
+
 </html>
