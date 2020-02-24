@@ -11,6 +11,7 @@ a{
 }
 
 .container{
+    height: 100vh;
     display:flex;
     flex-direction:column;
     align-items: center;
@@ -50,23 +51,26 @@ a{
 }
 .main > .swiper > .images{
     height:400px;
+    z-index: 1;
+    display: flex;
+    transition: all 0.5s;
 }
 .main > .swiper{
     overflow:hidden;
 }
-.main>.buttons>li{
+.main>.buttons>ul>li{
     cursor:pointer;
     border-right: 1px solid white;
     
     padding:10px 20px;
 }
-.main>.buttons>li:nth-child(1){
+.main>.buttons>ul>li:nth-child(1){
     border-left: 1px solid white;
 }
-.main>.buttons>li>img{
-    height: 30px;
+.main>.buttons>ul>li>img{
+    width: 30px;
 }
-.main>.buttons{
+.main>.buttons>ul{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,11 +79,15 @@ a{
     background: linear-gradient(180deg, rgba(242,242,242,1) 0%, rgba(248,248,248,1) 20%, rgba(246,246,246,1) 40%, rgba(243,243,243,1) 60%, rgba(237,237,237,1) 80%, rgba(236,236,236,1) 100%);
 }
 
-.main>.buttons>li:hover{
+.main>.buttons>ul>li:hover{
     box-shadow: -1px 1px 4px -2px rgba(0,0,0,0.72) inset;
     background-color: #efefef;
     background-image: linear-gradient(135deg, #efefef 5%, #c1bcbc 25%, #bbb2b2 66%, #ffffff 100%);
-
+}
+.main>.buttons>ul>.active{
+    box-shadow: -1px 1px 4px -2px rgba(0,0,0,0.72) inset;
+    background-color: #efefef;
+    background-image: linear-gradient(135deg, #efefef 5%, #c1bcbc 25%, #bbb2b2 66%, #ffffff 100%);
 }
 
 .main > .swiper >.after{
@@ -89,7 +97,4 @@ a{
     border-width:10px;
     border-color: white transparent transparent transparent;
     border-style: solid;
-}
-.footer{
-    padding:10px 0;
 }
